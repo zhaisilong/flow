@@ -1,0 +1,1 @@
+from dgllife.model.model_zoo import jtvae
