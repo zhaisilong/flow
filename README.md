@@ -1,28 +1,41 @@
 # Flow
 
-## env
+## 对抗
 
-`zsl`
+使用 EDBO 与预测器进行对抗生成，查看数据拟合情况。
 
-```bash
-mamba install -c conda-forge py-xgboost-gpu shap
-pip install "openbox[extra]"  # for HTML Visualization
-```
+[对抗脚本](adversial/adv.ipynb)
 
 ## EDBO
 
 [Nature 贝叶斯反应条件推荐](https://github.com/b-shields/edbo)
 
-有点大才小用
+
+### 化学反应产率与贝叶斯
 
 ## EDA
 
-See [EDA.ipynb](EDA.ipynb)
+[EDA.ipynb](EDA.ipynb)
+Features Importances: [shap.ipynb](shap.ipynb)
+Condition Predictions: [openbox.ipynb](openbox.ipynb)
 
-## Features Importances
+## 环境与安装
 
-See [shap.ipynb](shap.ipynb)
+```bash
+mamba create -nflow python=3.7
+mamba activate flow
+mamba install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+mamba install -c rdkit rdkit
+mamba install -c rdkit -c mordred-descriptor mordred
+mamba install cudatoolkit=11.7 py-xgboost-gpu shap
+mamba install jupyter ipykernel rich fire pandas
 
-## Condition Predictions
+# openbox
+pip install "openbox[extra]"  # for HTML Visualization
 
-See [openbox.ipynb](openbox.ipynb)
+# edbo
+cd software
+git clone https://github.com/b-shields/edbo
+cd edbo
+pip install -e .
+```
