@@ -4,6 +4,10 @@ This repository contains the code implementation for the paper titled "Continuou
 
 ![Flow](./flow.png)
 
+Here is the MOO results for our paper to balance the yields and the enantioselectivity for continuous flow chemistry
+
+![Pareto](./pareto.png)
+
 ## Setup
 
 To set up the required environment, follow these steps:
