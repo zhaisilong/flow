@@ -70,3 +70,25 @@ You can replicate the research results using the following notebook scripts:
 2. `notebooks/Single-Objective Optimization.ipynb`: This notebook focuses on single-objective target optimization for continuous flow process optimization, specifically optimizing the yield.
 
 3. `notebooks/Multi-Objective Optimization.ipynb`: In this notebook, multi-objective optimization is conducted, considering both yield and enantioselectivity as objectives to optimize simultaneously.
+
+## Citation
+
+```txt
+@article{Zhu2024,
+  author    = {Jinlin Zhu and Chenyang Zhao and Li Sheng and Dadong Shen and Gang Fan and Xufeng Wu and Lushan Yu and Kui Du},
+  title     = {Continuous flow process optimization aided by machine learning for a pharmaceutical intermediate},
+  journal   = {Journal of Flow Chemistry},
+  year      = {2024},
+  volume    = {14},
+  number    = {3},
+  pages     = {539--546},
+  doi       = {10.1007/s41981-024-00318-z},
+  url       = {https://doi.org/10.1007/s41981-024-00318-z},
+  abstract  = {In this paper, we demonstrate the use of machine learning to optimize the continuous flow process of a crucial intermediate in the production of Nemonoxacin. Our focus is to achieve good yield and enantioselectivity in the construction of chiral methyl group using 29 initial experimental datasets and six important variables. Employing Single-Objective Bayesian Optimization (SOBO), we achieved a predicted yield of up to 89.7%, consistent with the experimental 89.5%. Additionally, a Multi-Objective Bayesian Optimization (MOBO) algorithm, qNEHVI, was applied to balance yield and enantioselectivity, predicting 81.8% yield and 97.85% enantioselectivity, experimentally validated at 83.8% and 97.2%, respectively. This demonstrates Bayesian optimization as a powerful tool for continuous process optimization of active pharmaceutical ingredients (APIs).},
+  issn      = {2063-0212},
+  month     = sep
+}
+```
+
+
+
